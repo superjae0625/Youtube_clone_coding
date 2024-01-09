@@ -9,7 +9,8 @@ function App() {
     return (
         <>
             <SearchHeader />
-
+            {/* SearchHeader only navigate not making any network connection */}
+            {/* This is why set QueryClientServer for Outlet */}
             <YoutubeApiProvider>
                 <QueryClientProvider client={qeuryClient}>
                     <Outlet />

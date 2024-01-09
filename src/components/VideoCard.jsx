@@ -8,9 +8,11 @@ export default function VideoCard({ video, type }) {
     const isList = type === "list";
     return (
         <li
+            //refer RelatedVidoes.jsx -> created type='list'
             className={isList ? "flex gap-1 m-2" : ""}
             onClick={() => {
                 naviate(`/videos/watch/${video.id}`, { state: { video } });
+                //put additional obejct at second parameter
             }}
         >
             <img
