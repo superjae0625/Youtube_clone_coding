@@ -1,13 +1,13 @@
 # Youtube App using React.
 
-## Swithable data: Youtube Data API for publish, and mock data(JSON) for testing.
+Swithable data: Youtube Data API for publish, and mock data(JSON) for testing.
 
-## Deployed Postman
+Deployed Postman
 
-## React-router / outlet
+React-router / outlet
 
-## React-query / useQuery
+React-query / useQuery
 
-## Context / useContext
+Context / useContext
 
-## Axios
+Axios
