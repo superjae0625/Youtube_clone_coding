@@ -7,6 +7,7 @@ export default function VideoDetail() {
     const {
         state: { video },
     } = useLocation();
+    // read data from state
     // console.log(video);
     const { title, channelId, channelTitle, description } = video.snippet;
     return (

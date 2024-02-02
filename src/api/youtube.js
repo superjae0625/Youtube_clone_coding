@@ -3,18 +3,21 @@ export default class Youtube {
         this.apiClient = apiClient;
     }
 
+    //Videos.jsx
     async search(keyword) {
         //# is private
         // if there is a key word, use keyword if not, use mostPopular
         return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
     }
 
+    //ChannelInfo.jsx
     async channelImageURL(id) {
         return this.apiClient
             .channels({ params: { part: "snippet", id } })
             .then((res) => res.data.items[0].snippet.thumbnails.default.url);
     }
 
+    //RelatedVideos.jsx
     async relatedVideos(id) {
         return this.apiClient
             .search({

@@ -7,6 +7,7 @@ export default function VideoCard({ video, type }) {
     const naviate = useNavigate();
     const isList = type === "list";
     return (
+        //Using li tag instead of div because videos are in ul tag in Videos.jsx
         <li
             //refer RelatedVidoes.jsx -> created type='list'
             className={isList ? "flex gap-1 m-2" : ""}
